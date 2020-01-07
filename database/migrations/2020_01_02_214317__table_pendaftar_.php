@@ -29,7 +29,7 @@ class TablePendaftar extends Migration
             $table->string('ibu');
             $table->string('wali_alamat');
             $table->string('wali_no_telp');
-            $table->smallinteger('id_pekerjaan');
+            $table->string('pekerjaan');
             $table->string('pendidikan_ayah');
             $table->string('pendidikan_ibu');
             $table->timestamps();

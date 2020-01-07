@@ -34,7 +34,7 @@ class Pendaftar extends Model
         'ibu',
         'wali_alamat',
         'wali_no_telp',
-        'id_pekerjaan',
+        'pekerjaan',
         'pendidikan_ayah',
         'pendidikan_ibu'
     ];
