@@ -36,7 +36,7 @@ class PendaftarController extends Controller
            'ibu' => 'required|min:0|max:255',
            'wali_alamat' => 'required|min:0|max:255',
            'wali_no_telp' => 'required|min:0|max:255',
-           'id_pekerjaan' => 'required|min:0|max:255',
+           'pekerjaan' => 'required|min:0|max:255',
            'pendidikan_ayah' => 'required|min:0|max:255',
            'pendidikan_ibu' => 'required|min:0|max:255'
        ]);
@@ -55,7 +55,7 @@ class PendaftarController extends Controller
        $ibu = $request->input("ibu");
        $wali_alamat = $request->input("wali_alamat");
        $wali_no_telp = $request->input("wali_no_telp");
-       $id_pekerjaan = $request->input("id_pekerjaan");
+       $pekerjaan = $request->input("pekerjaan");
        $pendidikan_ayah = $request->input("pendidikan_ayah");
        $pendidikan_ibu = $request->input("pendidikan_ibu");
 
@@ -74,7 +74,7 @@ class PendaftarController extends Controller
            "ibu" => $ibu,
            "wali_alamat" => $wali_alamat,
            "wali_no_telp" => $wali_no_telp,
-           "id_pekerjaan" => $id_pekerjaan,
+           "pekerjaan" => $pekerjaan,
            "pendidikan_ayah" => $pendidikan_ayah,
            "pendidikan_ibu" => $pendidikan_ibu
        ];
