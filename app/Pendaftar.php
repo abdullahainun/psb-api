@@ -20,6 +20,7 @@ class Pendaftar extends Model
     protected $table = 'pendaftar';
 
     protected $fillable = [
+        'id_user',
         'nama',
         'jenis_kelamin',
         'tempat_lahir',
