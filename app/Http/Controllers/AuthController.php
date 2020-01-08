@@ -57,6 +57,7 @@ class AuthController extends Controller
                     return response()->json($out, $out['code']);
                 }
                 if (Hash::check($password, $user->password)) {
+                    $id_user = $user->id;
                     $newtoken  = $this->generateRandomString();
                     $user->update([
                         'token' => $newtoken
@@ -65,7 +66,8 @@ class AuthController extends Controller
                         "message" => "login_success",
                         "code"    => 200,
                         "result"  => [
-                            "token" => $newtoken,
+                            "token"   => $newtoken,
+                            "id_user" => $user
                         ]
                     ];
                 } else {
