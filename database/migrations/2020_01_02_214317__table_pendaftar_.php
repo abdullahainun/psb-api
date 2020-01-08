@@ -15,7 +15,7 @@ class TablePendaftar extends Migration
     {
         Schema::create('pendaftar', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('id_user')->unique();
+            $table->integer('id_users')->unique();
             $table->string('nama');
             $table->string('jenis_kelamin');
             $table->string('tempat_lahir');
