@@ -67,7 +67,7 @@ class AuthController extends Controller
                         "code"    => 200,
                         "result"  => [
                             "token"   => $newtoken,
-                            "id_user" => $user
+                            "id_user" => $user->id
                         ]
                     ];
                 } else {
