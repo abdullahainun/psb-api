@@ -22,7 +22,7 @@ class PendaftarController extends Controller
     public function add(Request $request)
     {
        $this->validate($request, [
-           'id_user' => 'required|min:0|max:255',
+           'id_users' => 'required|min:0|max:255',
            'nama' => 'required|min:0|max:255',
            'jenis_kelamin' => 'required|min:0|max:255',
            'tempat_lahir' => 'required|min:0|max:255',
@@ -44,7 +44,7 @@ class PendaftarController extends Controller
            'ibu_pendidikan' => 'required|min:0|max:255'
        ]);
 
-       $id_user = $request->input("id_user");
+       $id_users = $request->input("id_users");
        $nama = $request->input("nama");
        $jenis_kelamin = $request->input("jenis_kelamin");
        $tempat_lahir = $request->input("tempat_lahir");
@@ -66,7 +66,7 @@ class PendaftarController extends Controller
        $ibu_pendidikan = $request->input("ibu_pendidikan");
 
        $data = [
-           "id_user" => $id_user,
+           "id_users" => $id_users,
             "nama" => $nama,
             "jenis_kelamin" => $jenis_kelamin,
             "tempat_lahir" => $tempat_lahir,
