@@ -23,16 +23,18 @@ class TablePendaftar extends Migration
             $table->string('alamat');
             $table->integer('anak_ke');
             $table->integer('jml_saudara');
-            $table->smallinteger('id_kelas');
             $table->smallinteger('id_jurusan');
             $table->tinyInteger('tinggal_pondok');
-            $table->string('ayah');
-            $table->string('ibu');
-            $table->string('wali_alamat');
-            $table->string('wali_no_telp');
-            $table->string('pekerjaan');
-            $table->string('pendidikan_ayah');
-            $table->string('pendidikan_ibu');
+            $table->string('bapak_nama');
+            $table->string('bapak_alamat');
+            $table->string('bapak_no_telp');
+            $table->string('bapak_pekerjaan');
+            $table->string('bapak_pendidikan');
+            $table->string('ibu_nama');
+            $table->string('ibu_alamat');
+            $table->string('ibu_no_telp');
+            $table->string('ibu_pekerjaan');
+            $table->string('ibu_pendidikan');
             $table->timestamps();
         });
     }

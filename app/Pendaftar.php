@@ -28,16 +28,18 @@ class Pendaftar extends Model
         'alamat',
         'anak_ke',
         'jml_saudara',
-        'id_kelas',
         'id_jurusan',
         'tinggal_pondok',
-        'ayah',
-        'ibu',
-        'wali_alamat',
-        'wali_no_telp',
-        'pekerjaan',
-        'pendidikan_ayah',
-        'pendidikan_ibu'
+        'bapak_nama',
+        'bapak_alamat',
+        'bapak_no_telp',
+        'bapak_pekerjaan',
+        'bapak_pendidikan',
+        'ibu_nama',
+        'ibu_alamat',
+        'ibu_no_telp',
+        'ibu_pekerjaan',
+        'ibu_pendidikan'
     ];
 
     /**
