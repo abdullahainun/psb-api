@@ -27,6 +27,6 @@ class TableJurusan extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('jurusan');
     }
 }
